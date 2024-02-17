@@ -1,0 +1,32 @@
+{
+  "included": [
+    {
+      "cmd": "python3 -m http.server -d ./ 8000",
+      "tags": ["server"]
+    },
+    {
+      "cmd": "php -S localhost:8000 -t ./",
+      "tags": ["server"]
+    }
+  ],
+  "excluded": [
+    "git",
+    "git status",
+    "git branch",
+    "git pull",
+    "git push",
+    "git rebase --continue",
+    "yarn",
+    "yarn start",
+    "yarn dev",
+    "yarn build",
+    "cd ..",
+    "cd /",
+    "ls",
+    "ls -l",
+    "python3",
+    "python",
+    "clear",
+    "htop"
+  ]
+}
