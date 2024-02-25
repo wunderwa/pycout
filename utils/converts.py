@@ -1,12 +1,17 @@
 import json
 import re
 
+def key_as_list(dct, key):
+    if isinstance(dct, dict) and key in dct and isinstance(dct[key], list):
+        return dct[key]
+    else:
+        return []
 
-def clean_list(cmd_list, included, excluded):
+def clean_list(cmd_list, included, excluded, excluded_start):
     new_list = included
     ex_set = set(excluded).union(set(included))
     for line in cmd_list:
-        if not line in ex_set:
+        if not line in ex_set and not line.startswith(excluded_start):
             new_list.append(line)
             ex_set.add(line)
     return new_list

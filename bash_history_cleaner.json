@@ -10,23 +10,37 @@
     }
   ],
   "excluded": [
+    "cd ..",
+    "cd /",
+    "clear",
     "git",
     "git status",
     "git branch",
     "git pull",
     "git push",
     "git rebase --continue",
-    "yarn",
-    "yarn start",
-    "yarn dev",
-    "yarn build",
-    "cd ..",
-    "cd /",
     "ls",
     "ls -l",
+    "yarn",
+    "yarn build",
+    "yarn dev",
+    "yarn start",
+    "htop",
+    "mc",
+    "node",
+    "node -v",
+    "nvm",
     "python3",
-    "python",
-    "clear",
-    "htop"
+    "python"
+  ],
+  "excluded_start": [
+    "git branch -d ",
+    "git branch -D ",
+    "git push --set-upstream ",
+    "node ",
+    "nvm ",
+    "php ",
+    "python ",
+    "python3 "
   ]
 }

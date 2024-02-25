@@ -5,6 +5,10 @@
       "tags": ["path", "home"]
     },
     {
+      "cmd": "cd ~/work",
+      "tags": ["path", "work"]
+    },
+    {
       "cmd": "python3 -m http.server -d ./ 8000",
       "tags": ["server"]
     },
